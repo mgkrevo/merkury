@@ -15,13 +15,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.css">
 </head>
 <body>
     <header class="page-header">
         <div class="header-content">
-            <div class="header-brand">
-                <a href="/merkury/"><img src="img/header-brand.png" alt="Merkury"></a>
-            </div>
+            <a href="/merkury/" class="header-brand"><img src="img/header-brand.png" alt="Merkury"></a>
             <nav class="page-nav">
                 <li class="nav-item"><a href="#features" class="nav-link">Features</a></li>
                 <li class="nav-item"><a href="#pricing" class="nav-link">Pricing</a></li>
@@ -32,16 +31,46 @@
         </div>
     </header>
 
-    <section class="page-home">
-       <div class="home-layout">
-            <div class="container home-container">
-                <h1 class="home-title">Grow Your business with Merkury</h1>
-                <span class="home-subtitle">Your partner in crime!</span> 
-                <button type="button" class="btn home-btn">Get started</button>
-                <img src="img/home-screen.png" alt="" class="home-screen">
-        </div>
-       </div>
-    </section>
-    
+    <main>
+        <section class="page-home">
+            <div class="home-layout">
+                <div class="container home-container">
+                    <h1 class="home-title wow fadeInUp" data-wow-delay='.1s'>Grow Your business with Merkury</h1>
+                    <span class="home-subtitle wow fadeInUp" data-wow-delay='.2s'>Your partner in crime!</span> 
+                    <button type="button" class="btn home-btn wow fadeInUp" data-wow-delay='.3s'>Get started</button>
+                    <img src="img/home-screen.png" alt="" class="home-screen wow fadeInUp" data-wow-delay='.4s'>
+                </div>
+            </div>
+        </section>
+        
+        <section id="features" class="page-features">
+            <div class="container">
+                <ul class="feature-items wow fadeInUp" data-wow-delay=".3s">
+                    <li class="feature-items_item">
+                        <img src="img/feature/feature-1.png" alt="">
+                        <h3 class="feature-items_title">Manage your Workflow</h3>
+                        <p class="feature-items_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <a href="#" class="btn feature-items_btn">See more</a>
+                    </li>
+                    <li class="feature-items_item">
+                        <img src="img/feature/feature-2.png" alt="">
+                        <h3 class="feature-items_title">Analytics & Insights</h3>
+                        <p class="feature-items_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <a href="#" class="btn feature-items_btn">See more</a>
+                    </li>
+                    <li class="feature-items_item">
+                        <img src="img/feature/feature-3.png" alt="">
+                        <h3 class="feature-items_title">Manage your Workflow</h3>
+                        <p class="feature-items_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <a href="#" class="btn feature-items_btn">See more</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <!-- JS -->
+    <script src="js/wow.js"></script>
+    <script src="js/app.js"></script>
 </body>
 </html>

@@ -8,7 +8,7 @@ a {
     text-decoration: none;
 }
 
-nav, nav li {
+ul, ul li, nav, nav li {
     list-style-type: none;
 }
 
@@ -17,7 +17,14 @@ body {
     font-family: 'Roboto', 'Arial', sans-serif;
 }
 
+p {
+    font-size: 18px;
+    color: #8492af;
+    line-height: 1.6;
+}
+
 .btn {
+    display: inline-block;
     cursor: pointer;
     border: 1px solid transparent;
     background-color: transparent;
@@ -38,6 +45,12 @@ body {
     position: fixed;
     width: 100%;
     padding: 30px 20px;
+    z-index: 5;
+    transition: background-color ease 100ms;
+}
+
+.page-header.fixed {
+    background-color: #0e1a35;
 }
 
 .header-content {
@@ -47,6 +60,10 @@ body {
     margin: 0 auto; 
     width: 100%;
     max-width: 1700px;
+}
+
+.header-brand {
+    display: inline-block;
 }
 
 .header-brand img {
@@ -139,6 +156,44 @@ body {
 }
   
 .home-screen {
+    height: 80%;
     box-shadow: 0px -20px 80px 20px rgba(39, 71, 144, .4);
 }
 /* ------> Home End <------ */
+
+/* ------> Features <------ */
+.page-features {
+    padding-top: 300px;
+    height: 100vh;
+    max-height: 700px;
+}
+
+.feature-items {
+    display: flex;
+    justify-content: space-between;
+}
+
+.feature-items_item {
+    width: 360px;
+    text-align: center;
+}
+
+.feature-items_title {
+    margin: 50px 0 20px;
+    font-size: 24px;
+    font-weight: 900;
+    color: #0e1a35;
+}
+
+.feature-items_btn {
+    margin-top: 50px;
+    border-radius: 25px;
+    padding: 15px 85px;
+    border-color: #dadee7;
+    color: #0e1a35;
+}
+
+.feature-items_btn:hover {
+    background-color: #dadee7;
+}
+/* ------> Features End <------ */
