@@ -24,10 +24,20 @@ body {
     transition: color linear 200ms, background-color linear 200ms;
 }
 
+.container {
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1400px;
+    height: 100%;
+    padding: 0 20px;
+}
+
 /* ------> Header <------ */
 .page-header {
+    position: fixed;
+    width: 100%;
     padding: 30px 20px;
-    background-color: #000;
 }
 
 .header-content {
@@ -74,3 +84,61 @@ body {
     background-color: #5584ff;
 }
 /* ------> Header End <------ */
+
+/* ------> Home <------ */
+.page-home {
+    width: 100%;
+    height: 100vh;
+    min-height: 768px;
+    max-height: 1080px;
+    background-color: #0e1a35;
+}
+
+.home-layout {
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/home-layout.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.home-container {
+    padding-top: 240px;
+    text-align: center;
+}
+
+.home-title {
+    font-size: 60px;
+    font-weight: 100;
+    color: #fff;
+    line-height: 1.2;
+}
+
+.home-subtitle {
+    margin-top: 10px;
+    display: block;
+    font-size: 36px;
+    color: #8492af;
+}
+
+.home-btn {
+    display: block;
+    max-width: 200px;
+    margin: 60px auto;
+    font-weight: 700;
+    padding: 15px 50px;
+    border-radius: 25px;
+    color: #5584ff;
+    border-color: #5584ff;
+}
+
+.home-btn:hover {
+    color: #fff;
+    background-color: #5584ff;
+}
+  
+.home-screen {
+    box-shadow: 0px -20px 80px 20px rgba(39, 71, 144, .4);
+}
+/* ------> Home End <------ */
