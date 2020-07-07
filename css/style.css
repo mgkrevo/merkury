@@ -1,0 +1,76 @@
+*, *::before, *::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav, nav li {
+    list-style-type: none;
+}
+
+body {
+    font-size: 18px;
+    font-family: 'Roboto', 'Arial', sans-serif;
+}
+
+.btn {
+    cursor: pointer;
+    border: 1px solid transparent;
+    background-color: transparent;
+    transition: color linear 200ms, background-color linear 200ms;
+}
+
+/* ------> Header <------ */
+.page-header {
+    padding: 30px 20px;
+    background-color: #000;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto; 
+    width: 100%;
+    max-width: 1700px;
+}
+
+.header-brand img {
+    width: 234px;
+}
+
+.nav-item {
+    display: inline-block;
+    margin-right: 48px;
+}
+
+.nav-item:last-child {
+    margin-right: 0;
+}
+
+.nav-link {
+    color: #ffffff;
+    transition: color linear 200ms;
+}
+
+.nav-link:hover {
+    color: #5584ff;
+}
+
+.nav-link.btn {
+    padding: 13px 42px;
+    border-radius: 25px;
+    color: #5584ff;
+    border-color: #5584ff;
+    transition: color linear 200ms, background-color linear 200ms;
+}
+
+.btn.nav-link:hover {
+    color: #ffffff;
+    background-color: #5584ff;
+}
+/* ------> Header End <------ */
