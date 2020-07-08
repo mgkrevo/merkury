@@ -15,6 +15,14 @@ ul, ul li, nav, nav li {
 body {
     font-size: 18px;
     font-family: 'Roboto', 'Arial', sans-serif;
+    overflow-x: hidden;
+}
+
+h2 {
+    font-size: 60px;
+    font-weight: 100;
+    color: #0e1a35;
+    line-height: 1.2;
 }
 
 p {
@@ -141,7 +149,7 @@ p {
 
 .home-btn {
     display: block;
-    max-width: 200px;
+    max-width: 220px;
     margin: 60px auto;
     font-weight: 700;
     padding: 15px 50px;
@@ -163,9 +171,9 @@ p {
 
 /* ------> Features <------ */
 .page-features {
-    padding-top: 300px;
-    height: 100vh;
-    max-height: 700px;
+    padding: 300px 0;
+    min-height: 100vh;
+    max-height: 1600px;
 }
 
 .feature-items {
@@ -195,5 +203,48 @@ p {
 
 .feature-items_btn:hover {
     background-color: #dadee7;
+}
+
+.features-info {
+    position: relative;
+    margin-top: 200px;
+}
+
+.features-info p {
+    margin-top: 40px;
+    max-width: 600px;
+}
+
+.info-list {
+    margin-top: 40px;
+}
+
+.info-list li {
+    position: relative;
+    margin-top: 20px;
+    margin-left: 48px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #5584ff;
+}
+
+.info-list li::before {
+    position: absolute;
+    top: -3px;
+    left: -48px;
+    content: ' ';
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url('../img/check.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.feature-screen {
+    position: absolute;
+    top: -100px;
+    right: -550px;
 }
 /* ------> Features End <------ */
