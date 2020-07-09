@@ -53,22 +53,21 @@ function smoothScroll(smoothLinks) {
     
     const isActive = (element) => element.className.includes('active');
 
-    for (let smoothLink of smoothLinks) {
+    Array.from(smoothLinks).forEach(function (smoothLink) {
         smoothLink.addEventListener('click', function (e) {
-            e.preventDefault();
-            const id = smoothLink.getAttribute('href');
-
-            document.querySelector(id).scrollIntoView({
-                behavior: 'smooth',
-                block: 'start'
-            });
-
-            if(isActive(nav)) {
-                nav.classList.remove('active');
-                mobileButton.classList.remove('active');
-            }
+          e.preventDefault();
+          var id = smoothLink.getAttribute('href');
+          document.querySelector(id).scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+    
+          if (isActive(nav)) {
+            nav.classList.remove('active');
+            mobileButton.classList.remove('active');
+          }
         });
-    };
+    });
 }
 
 function slideWithArrows(sliderArrows) {

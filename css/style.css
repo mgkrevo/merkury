@@ -325,19 +325,28 @@ p {
 }
 
 .slider-arrow {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
     margin-left: 10px;
     width: 40px;
     height: 40px;
     font-size: 18px;
     border-radius: 50%;
     border-color: #a5aec3;
-    color: #a5aec3;
-    text-align: center;
+}
+
+.slider-arrow svg {
+    fill: #a5aec3;
+    transition: fill ease-in 200ms;
 }
 
 .slider-arrow:hover {
     background-color: #a5aec3;
-    color: #0e1a35;
+}
+
+.slider-arrow:hover svg {
+    fill: #0e1a35;
 }
 /* ------> Workflow End <------ */
 
@@ -405,7 +414,7 @@ p {
 .pricing-box {
     margin-top: 80px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: baseline;
 }
 
@@ -488,6 +497,10 @@ p {
     border-color: #5584ff;
 }
 
+.pricing-btn:hover {
+    background-color: #4269ca;
+}
+
 .pricing-btn::before {
     position: absolute;
     top: 50%;
@@ -527,11 +540,11 @@ p {
     color: #8492af;
 }
 
-.footer-link::before {
+.footer-link svg {
     position: absolute;
-    top: -2px;
-    left: -20px;
-    content: '\2191';
+    top: 2px;
+    left: -25px;
+    fill:#8492af;
 }
 /* ------> Footer End <------ */
 
@@ -634,7 +647,7 @@ p {
     
     /* ------> Features <------ */
     .page-features {
-        padding: 20% 0 100px;
+        padding: 30% 0 100px;
     }
     .feature-items {
         justify-content: center;
@@ -847,7 +860,7 @@ p {
     }
 
     .home-container {
-        padding-top: 15vh;
+        padding-top: 150px;
     }
     .home-title {
         font-size: 30px;
