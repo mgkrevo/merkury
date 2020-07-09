@@ -1,6 +1,8 @@
 *, *::before, *::after {
     padding: 0;
     margin: 0;
+    outline: none;
+    user-select: none;
     box-sizing: border-box;
 }
 
@@ -172,8 +174,7 @@ p {
 /* ------> Features <------ */
 .page-features {
     padding: 300px 0;
-    min-height: 100vh;
-    max-height: 1600px;
+    min-height: 1600px;
 }
 
 .feature-items {
@@ -248,3 +249,84 @@ p {
     right: -550px;
 }
 /* ------> Features End <------ */
+
+.page-workflow {
+    position: relative;
+    min-height: 560px;
+    background-color: #0e1a35;
+}
+
+.workflow-layout {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/workflow-layout.png');
+    background-repeat: no-repeat;
+    background-position: 50% 0%;
+    background-size: contain;
+}
+
+.workflow-container {
+    display: flex;
+    align-items: center;
+}
+
+.workflow-screen {
+    width: 50%;
+}
+
+.workflow-slider {
+    width: 50%;
+}
+
+.workflow-slider h2 {
+    color: #ffffff;
+}
+
+.workflow-slider p {
+    margin-top: 40px;
+    max-width: 600px;
+}
+
+.slider-track {
+    position: relative;
+    height: 300px;
+}
+
+.slide {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity ease-in 200ms, visibility ease-in 200ms;
+}
+
+.slide.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.slider-nav {
+    margin-top: 40px;
+}
+
+.slider-arrow {
+    margin-left: 10px;
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+    border-radius: 50%;
+    border-color: #a5aec3;
+    color: #a5aec3;
+    text-align: center;
+}
+
+.slider-arrow:hover {
+    background-color: #a5aec3;
+    color: #0e1a35;
+}
