@@ -12,13 +12,14 @@ function init() {
 
     smoothScroll(smoothLinks);
     slideWithArrows(sliderArrows);
+    mobileNavigation();
 }
 
 function animateHeader() {
     const currentY = pageYOffset;
     const header = document.querySelector('.page-header');
 
-    let isOffset = () => currentY >= header.getBoundingClientRect().height;
+    const isOffset = () => currentY >= header.getBoundingClientRect().height;
 
     if(isOffset()) {
         header.classList.add('fixed');
@@ -29,7 +30,29 @@ function animateHeader() {
     return;
 }
 
+function mobileNavigation() {
+    const mobileButton = document.querySelector('.mobile-btn');
+    const nav = document.querySelector('.page-nav');
+    
+    const isActive = (element) => element.className.includes('active');
+
+    mobileButton.addEventListener('click', () => {
+        if(isActive(nav)) {
+            nav.classList.remove('active');
+            mobileButton.classList.remove('active');
+        } else {
+            nav.classList.add('active');
+            mobileButton.classList.add('active');
+        }
+    });
+}
+
 function smoothScroll(smoothLinks) {
+    const mobileButton = document.querySelector('.mobile-btn');
+    const nav = document.querySelector('.page-nav');
+    
+    const isActive = (element) => element.className.includes('active');
+
     for (let smoothLink of smoothLinks) {
         smoothLink.addEventListener('click', function (e) {
             e.preventDefault();
@@ -39,6 +62,11 @@ function smoothScroll(smoothLinks) {
                 behavior: 'smooth',
                 block: 'start'
             });
+
+            if(isActive(nav)) {
+                nav.classList.remove('active');
+                mobileButton.classList.remove('active');
+            }
         });
     };
 }
