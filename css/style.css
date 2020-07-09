@@ -17,6 +17,10 @@ ul, ul li, nav, nav li {
 body {
     font-size: 18px;
     font-family: 'Roboto', 'Arial', sans-serif;
+    background-color: #f6f7fa;
+}
+
+main {
     overflow-x: hidden;
 }
 
@@ -179,6 +183,7 @@ p {
 
 .feature-items {
     display: flex;
+    align-items: baseline;
     justify-content: space-between;
 }
 
@@ -250,6 +255,7 @@ p {
 }
 /* ------> Features End <------ */
 
+/* ------> Workflow <------ */
 .page-workflow {
     position: relative;
     min-height: 560px;
@@ -292,7 +298,7 @@ p {
 
 .slider-track {
     position: relative;
-    height: 300px;
+    height: 350px;
 }
 
 .slide {
@@ -330,3 +336,56 @@ p {
     background-color: #a5aec3;
     color: #0e1a35;
 }
+/* ------> Workflow End <------ */
+
+/* ------> App <------ */
+.page-app {
+    padding: 100px 0;
+    text-align: center;
+}
+
+.app-container > p {
+    margin: 40px auto 0;
+    max-width: 80%;
+}
+
+.app-content {
+    position: relative;
+    padding-top: 150px;
+}
+
+.app-popup {
+    position: absolute;
+    text-align: left;
+    max-width: 280px;
+}
+
+.app-popup p {
+    margin-top: 40px;
+}
+
+.app-popup img {
+    position: absolute;
+    width: 600px;
+}
+
+.app-popup_left {
+    top: 220px;
+    left: 0;
+}
+
+.app-popup_left img {
+    left: 0;
+}
+
+.app-popup_right {
+    right: 0;
+    bottom: 180px;
+    text-align: right;
+}
+
+.app-popup_right img {
+    right: 0;
+}
+
+/* ------> App End <------ */
