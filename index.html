@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zxx">
 <head>
     <!-- Meta Tags -->
     <meta charset="UTF-8">
@@ -22,16 +22,18 @@
         <div class="header-content">
             <a href="/merkury/" class="header-brand"><img src="img/header-brand.png" alt="Merkury"></a>
             <nav class="page-nav">
-                <li class="nav-item"><a href="#features" class="nav-link">Features</a></li>
-                <li class="nav-item"><a href="#pricing" class="nav-link">Pricing</a></li>
-                <li class="nav-item"><a href="blog/" class="nav-link">Blog</a></li>
-                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
-                <li class="nav-item"><a href="login/" class="nav-link btn">Login</a></li>
+                <ul class="navbar">
+                    <li class="nav-item"><a href="#features" class="nav-link">Features</a></li>
+                    <li class="nav-item"><a href="#pricing" class="nav-link">Pricing</a></li>
+                    <li class="nav-item"><a href="blog/" class="nav-link">Blog</a></li>
+                    <li class="nav-item"><a href="contact/" class="nav-link">Contact</a></li>
+                    <li class="nav-item"><a href="login/" class="nav-link btn">Login</a></li>
+                </ul>
             </nav>
         </div>
     </header>
 
-    <main>
+    <main id="main">
         <section class="page-home">
             <div class="home-layout">
                 <div class="container home-container">
@@ -135,8 +137,56 @@
                 </div>
             </div>
         </section>
+
+        <section id="pricing" class="page-pricing">
+            <div class="container wow fadeInUp" data-wow-delay=".3s">
+                <h2>Check our pricing!</h2>
+                <ul class="pricing-box">
+                    <li class="pricing-box_item">
+                        <h3>Bronze Plan</h3>
+                        <span class="pricing-box_price"><sub>$</sub><strong>19</strong><sub>/mon</sub></span>
+                        <ul class="pricing-box_list">
+                            <li class="available">Lorem ipsum dolor sit amet.</li>
+                            <li class="available">Lorem ipsum dolor sit amet.</li>
+                            <li>Lorem ipsum dolor sit amet.</li>
+                            <li>Lorem ipsum dolor sit amet.</li>
+                        </ul>
+                    </li>
+                    <li class="pricing-box_item">
+                        <h3>Silver Plan</h3>
+                        <span class="pricing-box_price"><sub>$</sub><strong>49</strong><sub>/mon</sub></span>
+                        <ul class="pricing-box_list">
+                            <li class="available">Lorem ipsum dolor sit amet.</li>
+                            <li class="available">Lorem ipsum dolor sit amet.</li>
+                            <li class="available">Lorem ipsum dolor sit amet.</li>
+                            <li>Lorem ipsum dolor sit amet.</li>
+                        </ul>
+                    </li>
+                    <li class="pricing-box_item">
+                        <h3>Gold Plan</h3>
+                        <span class="pricing-box_price"><sub>$</sub><strong>99</strong><sub>/mon</sub></span>
+                        <ul class="pricing-box_list">
+                            <li class="available">Lorem ipsum dolor sit amet.</li>
+                            <li class="available">Lorem ipsum dolor sit amet.</li>
+                            <li class="available">Lorem ipsum dolor sit amet.</li>
+                            <li class="available">Lorem ipsum dolor sit amet.</li>
+                        </ul>
+                    </li>
+                </ul>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                <button type="button" class="btn pricing-btn">Join now!</button>   
+            </div>
+        </section>
     </main>
 
+    <footer class="page-footer">
+        <div class="container footer-container">
+            <span class="reserved">&copy; 2020 Merkury (Study Version)</span>
+        
+            <a href="#main" class="footer-link">Back to top</a>
+        </div>
+    </footer>
     <!-- JS -->
     <script src="js/wow.js"></script>
     <script src="js/app.js"></script>

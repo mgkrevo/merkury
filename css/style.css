@@ -18,9 +18,13 @@ body {
     font-size: 18px;
     font-family: 'Roboto', 'Arial', sans-serif;
     background-color: #f6f7fa;
+    -ms-overflow-x: hidden;
+    overflow-x: hidden;
+
 }
 
 main {
+    -ms-overflow-x: hidden;
     overflow-x: hidden;
 }
 
@@ -387,5 +391,143 @@ p {
 .app-popup_right img {
     right: 0;
 }
-
 /* ------> App End <------ */
+
+/* ------> Pricing <------ */
+.page-pricing {
+    padding: 140px 0 100px;
+    text-align: center;
+}
+
+.pricing-box {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+}
+
+.pricing-box_item {
+    width: 380px;
+    padding: 50px;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, .2);
+}
+
+.pricing-box h3 {
+    margin-bottom: 40px;
+    font-size: 24px;
+    color: #0e1a35;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.pricing-box_price {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    font-size: 72px;
+    font-weight: 700;
+    color: #0e1a35;
+}
+
+.pricing-box_price sub {
+    font-size: 24px;
+}
+
+.pricing-box_price sub:last-child {
+    color: #8492af;
+}
+
+.pricing-box_list {
+    margin-top: 30px;
+    margin-left: 24px;
+}
+
+.pricing-box_list li {
+    position: relative;
+    font-size: 16px;
+    margin: 20px 0;
+    color: #8492af;
+}
+
+.pricing-box_list li::before {
+    position: absolute;
+    top: -3px;
+    left: -32px;
+    content: ' ';
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url('../img/uncheck.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.pricing-box_list .available::before {
+    background-image: url('../img/check.png');
+}
+
+.page-pricing p {
+    margin: 100px auto 20px;
+    max-width: 80%;
+}
+
+.pricing-btn {
+    position: relative;
+    display: block;
+    max-width: 220px;
+    margin: 60px auto;
+    font-weight: 700;
+    padding: 15px 50px;
+    border-radius: 25px;
+    color: #ffffff;
+    background-color: #5584ff;
+    border-color: #5584ff;
+}
+
+.pricing-btn::before {
+    position: absolute;
+    top: 50%;
+    left: -120%;
+    content: '';
+    height: 1px;
+    width: 100%;
+    background-color: #8492af;
+}
+
+.pricing-btn::after {
+    position: absolute;
+    top: 50%;
+    right: -120%;
+    content: '';
+    height: 1px;
+    width: 100%;
+    background-color: #8492af;
+}
+/* ------> Pricing End <------ */
+
+/* ------> Footer <------ */
+.page-footer {
+    height: 150px;
+    background-color: #0e1a35;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #8492af;
+}
+
+.footer-link {
+    position: relative;
+    color: #8492af;
+}
+
+.footer-link::before {
+    position: absolute;
+    top: -2px;
+    left: -20px;
+    content: '\2191';
+}
+/* ------> Footer End <------ */
